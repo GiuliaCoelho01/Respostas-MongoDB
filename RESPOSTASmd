@@ -1,0 +1,55 @@
+# Respostas.MD
+repositório destinado ás respostas das atividades providenciadas pelo professor Gabriel Augusto, utilizando o sistema do MongoDB
+
+## Nível 3: Atores e Atrizes Famosos
+
+### Natalie Portman
+
+**3.1** Quantas vezes Natalie Portman foi indicada ao Oscar?
+{nome_do_indicado:"Natalie Portman"}
+
+**3.2** Quantos Oscars Natalie Portman ganhou?
+{nome_do_indicado:"Natalie Portman", vencedor: 1}
+
+**3.3** Em quais anos e por quais filmes Natalie Portman foi indicada?
+{nome_do_indicado:"Natalie Portman"}
+
+**3.4** Liste todas as indicações de Natalie Portman mostrando: ano, categoria, filme e se venceu.
+{nome_do_indicado:"Natalie Portman"}
+
+### Viola Davis
+
+**3.5** Quantas vezes Viola Davis foi indicada ao Oscar?
+{nome_do_indicado: "Viola Davis"}
+
+**3.6** Quantos Oscars Viola Davis ganhou?
+{nome_do_indicado: "Viola Davis", vencedor: 1}
+
+**3.7** Por quais filmes Viola Davis foi indicada?
+db.usuarios.find({ nome_do_indicado: "Viola Davis" }, { nome_do_indicado: 1, nome_do_filme: 1 })
+ 
+
+### Amy Adams
+
+**3.8** Amy Adams já ganhou algum Oscar?
+{nome_do_indicado: "Amy Adams", vencedor: 1}
+R: Não
+
+**3.9** Quantas vezes Amy Adams foi indicada sem ganhar?
+{ nome_do_indicado: "Amy Adams" }
+R: 6 vezes
+
+### Denzel Washington
+
+**3.10** Denzel Washington já ganhou algum Oscar?
+{ nome_do_indicado: "Denzel Washington", vencedor: 1 }
+R: Sim, duas vezes
+
+**3.11** Quantas vezes Denzel Washington foi indicado ao Oscar?
+{ nome_do_indicado: "Denzel Washington" }
+R: 9 vezes
+
+**3.12** Liste todos os Oscars que Denzel Washington ganhou (ano, categoria, filme).
+db.usuarios.find({ nome_do_indicado: "Denzel Washington" }, { nome_do_indicado: 0, nome_do_filme: 1, ano_cerimonia: 1, categoria: 1, vencedor: 1})
+
+---
