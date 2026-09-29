@@ -1,0 +1,3 @@
+Este repositório serve para registrar as práticas de banco de dados  por meio do MongoDB. O projeto utiliza um arquivo JSON com dados históricos do Oscar para consolidar o aprendizado prático.
+
+O trabalho propõe três objetivos principais. O primeiro consiste em aplicar conceitos de dados na importação de arquivos JSON para coleções do MongoDB. O segundo envolve a execução de filtros e consultas por meio do comando find para recuperar registros específicos da base. Por fim, o terceiro foco reside no estudo das regras de projeção para exibir ou ocultar campos, com atenção especial à restrição técnica que impede a mistura de inclusão e exclusão no mesmo comando.
